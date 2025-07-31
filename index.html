@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LimerHub</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .script {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px #000;
+    }
+    .script h2 {
+      margin: 0 0 10px 0;
+    }
+    .script pre {
+      background: #222;
+      padding: 10px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    .copy-btn {
+      margin-top: 10px;
+      background: #4caf50;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .copy-btn:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔧LimerHub</h1>
+
+    <div class="script">
+      <h2>POLY-Z Zombie RNG Crates, Pets, Survival</h2>
+     
+      <pre id="code1">loadstring(game:HttpGet("https://raw.githubusercontent.com/LimerBro/ScriptLimerHub/refs/heads/main/POLY-Z%20Zombie%20RNG%20Crates%2C%20Pets%2C%20Survival.lua"))()</pre>
+      <button class="copy-btn" onclick="copyText('code1')">📋 Скопіювати</button>
+    </div>
+
+    <div class="script">
+      <h2>Rebirth Masters X</h2>
+   
+      <pre id="code2">loadstring(game:HttpGet("https://raw.githubusercontent.com/LimerBro/ScriptLimerHub/refs/heads/main/Rebirth%20Masters%20X.lua"))()</pre>
+      <button class="copy-btn" onclick="copyText('code2')">📋 Скопіювати</button>
+    </div>
+
+  </div>
+
+  <script>
+    function copyText(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text);
+      alert("Скріпт скопійовано!");
+    }
+  </script>
+</body>
+</html>
