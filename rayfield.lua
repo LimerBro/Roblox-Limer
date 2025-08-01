@@ -603,7 +603,7 @@ local RayfieldLibrary = {
 		},
     
      BlackWhite = {
-	TextColor = Color3.fromRGB(255, 255, 255),
+	TextColor = Color3.fromRGB(0, 255, 0),
 
 	Background = Color3.fromRGB(0, 100, 0),
 	Topbar = Color3.fromRGB(0, 0, 0),
