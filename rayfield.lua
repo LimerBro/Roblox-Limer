@@ -603,45 +603,45 @@ local RayfieldLibrary = {
 		},
     
      BlackWhite = {
-	TextColor = Color3.fromRGB(0, 255, 0),
+	TextColor = Color3.fromRGB(0, 225, 0),
 
-	Background = Color3.fromRGB(0, 100, 0),
-	Topbar = Color3.fromRGB(0, 0, 0),
+	Background = Color3.fromRGB(0, 0, 0),
+	Topbar = Color3.fromRGB(0, 20, 0),
 	Shadow = Color3.fromRGB(0, 0, 0),
 
 	NotificationBackground = Color3.fromRGB(0, 0, 0),
-	NotificationActionsBackground = Color3.fromRGB(0, 0, 0),
+	NotificationActionsBackground = Color3.fromRGB(0, 225, 0),
 
 	TabBackground = Color3.fromRGB(0, 0, 0),
-	TabStroke = Color3.fromRGB(255, 255, 255),
+	TabStroke = Color3.fromRGB(0, 225, 0),
 	TabBackgroundSelected = Color3.fromRGB(0, 0, 0),
-	TabTextColor = Color3.fromRGB(255, 255, 255),
-	SelectedTabTextColor = Color3.fromRGB(255, 255, 255),
+	TabTextColor = Color3.fromRGB(0, 225, 0),
+	SelectedTabTextColor = Color3.fromRGB(0, 225, 0),
 
 	ElementBackground = Color3.fromRGB(0, 0, 0),
 	ElementBackgroundHover = Color3.fromRGB(0, 0, 0),
-	SecondaryElementBackground = Color3.fromRGB(0, 0, 0),
-	ElementStroke = Color3.fromRGB(255, 255, 255),
-	SecondaryElementStroke = Color3.fromRGB(255, 255, 255),
+	SecondaryElementBackground = Color3.fromRGB(0, 50, 0),
+	ElementStroke = Color3.fromRGB(0, 225, 0),
+	SecondaryElementStroke = Color3.fromRGB(0, 225, 0),
 
-	SliderBackground = Color3.fromRGB(255, 255, 255),
-	SliderProgress = Color3.fromRGB(255, 255, 255),
-	SliderStroke = Color3.fromRGB(255, 255, 255),
+	SliderBackground = Color3.fromRGB(0, 80, 0),
+	SliderProgress = Color3.fromRGB(0, 80, 0),
+	SliderStroke = Color3.fromRGB(0, 255, 0),
 
 	ToggleBackground = Color3.fromRGB(0, 0, 0),
-	ToggleEnabled = Color3.fromRGB(255, 255, 255),
-	ToggleDisabled = Color3.fromRGB(100, 100, 100),
-	ToggleEnabledStroke = Color3.fromRGB(255, 255, 255),
-	ToggleDisabledStroke = Color3.fromRGB(125, 125, 125),
-	ToggleEnabledOuterStroke = Color3.fromRGB(255, 255, 255),
-	ToggleDisabledOuterStroke = Color3.fromRGB(65, 65, 65),
+	ToggleEnabled = Color3.fromRGB(0, 200, 0),
+	ToggleDisabled = Color3.fromRGB(0, 40, 0),
+	ToggleEnabledStroke = Color3.fromRGB(0, 255, 0),
+	ToggleDisabledStroke = Color3.fromRGB(0, 25, 0),
+	ToggleEnabledOuterStroke = Color3.fromRGB(0, 200, 0),
+	ToggleDisabledOuterStroke = Color3.fromRGB(0, 0, 0),
 
 	DropdownSelected = Color3.fromRGB(0, 0, 0),
 	DropdownUnselected = Color3.fromRGB(0, 0, 0),
 
 	InputBackground = Color3.fromRGB(0, 0, 0),
-	InputStroke = Color3.fromRGB(255, 255, 255),
-	PlaceholderColor = Color3.fromRGB(178, 178, 178)
+	InputStroke = Color3.fromRGB(0, 255, 0),
+	PlaceholderColor = Color3.fromRGB(0, 200, 0)
 },
 		Serenity = {
 			TextColor = Color3.fromRGB(50, 55, 60),
@@ -4037,3 +4037,4 @@ task.delay(4, function()
 end)
 
 return RayfieldLibrary
+
