@@ -601,48 +601,60 @@ local RayfieldLibrary = {
 			InputStroke = Color3.fromRGB(45, 50, 60), 
 			PlaceholderColor = Color3.fromRGB(150, 150, 160)
 		},
-    
-     BlackWhite = {
-	TextColor = Color3.fromRGB(0, 225, 0),
+				
+    BlackYellowTheme = {
+	TextColor = Color3.fromRGB(255, 255, 0), -- Жовтий текст
 
-	Background = Color3.fromRGB(0, 0, 0),
-	Topbar = Color3.fromRGB(0, 20, 0),
+	Background = Color3.fromRGB(0, 0, 0), -- Чорний фон
+	Topbar = Color3.fromRGB(20, 20, 20), 
 	Shadow = Color3.fromRGB(0, 0, 0),
 
 	NotificationBackground = Color3.fromRGB(0, 0, 0),
-	NotificationActionsBackground = Color3.fromRGB(0, 225, 0),
+	NotificationActionsBackground = Color3.fromRGB(255, 255, 0),
 
 	TabBackground = Color3.fromRGB(0, 0, 0),
-	TabStroke = Color3.fromRGB(0, 225, 0),
-	TabBackgroundSelected = Color3.fromRGB(0, 0, 0),
-	TabTextColor = Color3.fromRGB(0, 225, 0),
-	SelectedTabTextColor = Color3.fromRGB(0, 225, 0),
+	TabStroke = Color3.fromRGB(255, 255, 0),
+	TabBackgroundSelected = Color3.fromRGB(30, 30, 30),
+	TabTextColor = Color3.fromRGB(255, 255, 0),
+	SelectedTabTextColor = Color3.fromRGB(255, 255, 0),
 
 	ElementBackground = Color3.fromRGB(0, 0, 0),
-	ElementBackgroundHover = Color3.fromRGB(0, 0, 0),
-	SecondaryElementBackground = Color3.fromRGB(0, 50, 0),
-	ElementStroke = Color3.fromRGB(0, 225, 0),
-	SecondaryElementStroke = Color3.fromRGB(0, 225, 0),
+	ElementBackgroundHover = Color3.fromRGB(30, 30, 30),
+	SecondaryElementBackground = Color3.fromRGB(50, 50, 0),
+	ElementStroke = Color3.fromRGB(255, 255, 0),
+	SecondaryElementStroke = Color3.fromRGB(200, 200, 0),
 
-	SliderBackground = Color3.fromRGB(0, 80, 0),
-	SliderProgress = Color3.fromRGB(0, 80, 0),
-	SliderStroke = Color3.fromRGB(0, 255, 0),
+	-- Слайдер
+	SliderBackground = Color3.fromRGB(80, 80, 0),
+	SliderProgress = Color3.fromRGB(200, 200, 0),
+	SliderStroke = Color3.fromRGB(255, 255, 0),
 
+	-- Перемикач (Toggle)
 	ToggleBackground = Color3.fromRGB(0, 0, 0),
-	ToggleEnabled = Color3.fromRGB(0, 200, 0),
-	ToggleDisabled = Color3.fromRGB(0, 40, 0),
+	ToggleEnabled = Color3.fromRGB(0, 200, 0), -- Зелений (увімкн.)
+	ToggleDisabled = Color3.fromRGB(200, 0, 0), -- Червоний (вимкн.)
 	ToggleEnabledStroke = Color3.fromRGB(0, 255, 0),
-	ToggleDisabledStroke = Color3.fromRGB(0, 25, 0),
-	ToggleEnabledOuterStroke = Color3.fromRGB(0, 200, 0),
-	ToggleDisabledOuterStroke = Color3.fromRGB(0, 0, 0),
+	ToggleDisabledStroke = Color3.fromRGB(255, 0, 0),
+	ToggleEnabledOuterStroke = Color3.fromRGB(0, 150, 0),
+	ToggleDisabledOuterStroke = Color3.fromRGB(150, 0, 0),
 
-	DropdownSelected = Color3.fromRGB(0, 0, 0),
+	DropdownSelected = Color3.fromRGB(30, 30, 0),
 	DropdownUnselected = Color3.fromRGB(0, 0, 0),
 
-	InputBackground = Color3.fromRGB(0, 0, 0),
-	InputStroke = Color3.fromRGB(0, 255, 0),
-	PlaceholderColor = Color3.fromRGB(0, 200, 0)
+	-- Поле введення тексту
+	InputBackground = Color3.fromRGB(80, 80, 0), -- Темно-жовте
+	InputStroke = Color3.fromRGB(255, 255, 0),
+	PlaceholderColor = Color3.fromRGB(200, 200, 100),
+	InputTextColor = Color3.fromRGB(255, 255, 0), -- Текст жовтий
+
+	-- Шрифт (через FontFace з ID)
+	Font = Font.new("rbxassetid://12187370000"),
+
+	-- Додатково: фон
+	BackgroundImage = nil, -- Можна задати "rbxassetid://ID_картинки"
+	BackgroundVideo = nil  -- (якщо зробиш UI відео-плеєр)
 },
+				
 		Serenity = {
 			TextColor = Color3.fromRGB(50, 55, 60),
 			Background = Color3.fromRGB(240, 245, 250),
@@ -4037,4 +4049,5 @@ task.delay(4, function()
 end)
 
 return RayfieldLibrary
+
 
